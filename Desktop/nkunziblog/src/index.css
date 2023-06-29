@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  color: hsl(200, 100%, 90%);
+}
+
+h1 {
+  color: hsl(200, 100%, 90%);
+}
+
+.blog-preview p {
+  color: hsl(201, 100%, 97%);
+  font-size: 14px;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 5px solid hsl(200, 100%, 90%);
+}
+.navbar h1 {
+  color: hsl(200, 100%, 90%);
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  color: hsl(200, 100%, 90%);
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: hsl(200, 100%, 80%);
+  letter-spacing: 1px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 40px 16px;
+  margin: 20px 0;
+  color: hsl(200, 100%, 90%);
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px hsl(200, 100%, 90%);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: hsl(200, 100%, 90%);
+}
