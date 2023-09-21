@@ -1,16 +1,19 @@
- const BlogList = ({blogs , title}) => {
-    return ( 
-        <div className="blog-list">
-       { /* eslint-disable-next-line no-undef */}
-       <h2>{title}</h2>
-            {blogs.map((blog)=> (
-               <div className="blog-preview" key={blog.id}>
-                <h2> {blog.title} </h2>
-                <p>Cooked By {blog.author}</p>
-               </div>
-           ))} 
+/* eslint-disable no-undef */
+import { Link } from "react-router-dom";
+const BlogList = ({ blogs, title }) => {
+  return (
+    <div className="blog-list">
+      <h2>{title}</h2>
+      {blogs.map((blog) => (
+        <div className="blog-preview" key={blog.id}>
+          <Link to={`/blogs/${blog.id}`}>
+            <h2> {blog.title} </h2>
+            <p>Cooked By {blog.author}</p>
+          </Link>
         </div>
-     );
- }
-  
- export default BlogList;
+      ))}
+    </div>
+  );
+};
+
+export default BlogList;

@@ -17,7 +17,7 @@ h1 {
 }
 
 .blog-preview p {
-  color: hsl(201, 100%, 97%);
+  color: inherit;
   font-size: 14px;
 }
 
@@ -66,7 +66,119 @@ h1 {
 }
 
 .blog-preview h2 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 8px;
+  background: linear-gradient(
+    76deg,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff
+  );
+  background-size: 500% 500%;
+  background-clip: text;
+  color: transparent;
+  animation: slime 45s ease infinite;
+}
+.blog-preview a , .blog-preview a p{
+  text-decoration: none;
   color: hsl(200, 100%, 90%);
 }
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: hsl(200, 100%, 90%) ;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 40px 0;
+  word-spacing: 4px;
+  line-height: 1.5;
+  text-align: start;
+  line-break: strict;
+}
+.blog-details button {
+  padding: 8px 30px;
+  color: hsl(200, 100%, 80%);
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: 2px dotted hsl(200, 100%, 80%);
+  background-color: transparent;
+
+
+}
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: hsl(200, 100%, 80%);
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  outline: #333;
+}
+.create button {
+  background: transparent;
+  border: 2px dotted hsl(200, 100%, 90%);
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+/* .blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+@keyframes slime {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
